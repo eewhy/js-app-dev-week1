@@ -47,3 +47,22 @@ console.log(myLife);
 const templateStr = `""''${myLife}`
 
 console.log(templateStr);
+
+const strNumber = '24';
+
+console.log(strNumber);
+
+const number = 24;
+
+console.log(number);
+
+console.log(typeof strNumber);
+console.log(typeof number);
+
+console.log(number*number);
+
+const myBoolTrue = true
+const myBoolfalse = false
+
+console.log(myBoolTrue);
+console.log(myBoolfalse);
