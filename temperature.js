@@ -1,5 +1,5 @@
 const temp = 80;
-const output = "The Temperature is " + temp + " Degrees";
+console.log("The Temperature is " + temp + " Degrees");
 const precipitation = "raining";
 const indoors = true
 
