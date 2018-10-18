@@ -18,11 +18,11 @@ console.log(cart);
 cart.unshift(shoppingList.shift());
 console.log(cart);
 
-while (shoppingList > 1) {
-  console.log(shoppingList+=1);
+while (shoppingList.length > 1) {
+  cart.push(shoppingList.pop());
 }
 
-console.log(shoppingList.sort());
-console.log(shoppingList.reverse());
+console.log(cart.sort());
+console.log(cart.reverse());
 
-console.log(shoppingList.join(', '));
+console.log(cart.join(', '));

@@ -9,8 +9,6 @@ while (player1Win <= 3 || player2Win <= 3) {
  var player2Weapons = weapons[parseInt(Math.random()*weapons.length) %3];
  //console.log(player2Weapons + " player 2 weapons");
  //console.log("the loop is running");
- player1Win++;
- player2Win++;
 
    function compare(player1,player2){
       if(player1 === player2){
@@ -23,40 +21,17 @@ while (player1Win <= 3 || player2Win <= 3) {
         player1 === "scissors" && player2 === "paper"
       ){
         player1Win++;
-        console.log('player1 wins!')
+        console.log('player1 wins!');
       } else {
         player2Win++;
-        console.log('player2 wins')
+        console.log('player2 wins!');
       }
   }
   compare(player1Weapons,player2Weapons);
-};
-//
-// if(player2==="scissors"){
-//     player1Win ++;
-//     console.log("Player1 wins");
-// }
-// else{
-//     player2Win ++;
-//     console.log("Player2 wins");
-// }
-//
-// if(player1==="paper"){
-//     if(player2==="rock"){
-//         player1Win ++;
-//         console.log("Player1 wins");
-//     }
-//     else{
-//         player2Win ++;
-//         console.log("Player2 wins");
-//     }
-//     if(player1==="scissors"){
-//         if(player2==="rock"){
-//             player1Win ++;
-//             console.log("Player1 wins");
-//         }
-//         else{
-//             player2Win ++;
-//             console.log("Player2 wins");
-//         }
-//     }
+}
+
+if (player1Win > player2Win) {
+  console.log('player1 is the final winner!');
+} else {
+  console.log('player2 is the final winner!');
+}

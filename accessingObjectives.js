@@ -46,8 +46,11 @@ console.log(course.students[1].computer.type);
 // The preReq equipment object
 console.log(course.preReqs.equipment);
 // The second OSOption from equipment prereqs ('osx')
-console.log(course.preReqs.equipment.OSOptions);
+console.log(course.preReqs.equipment.OSOptions[1]);
 // String listing the OSOptions separated by 'or' ('linux or osx')
 console.log(course.preReqs.equipment.OSOptions.join(' or '));
 // An array of all the students that are using OSX.
-console.log(course.students.computer.OS);
+var studentsWOSX = course.students.filter(function(student){
+  return student.computer.OS === 'OSX';
+})
+console.log(studentsWOSX);

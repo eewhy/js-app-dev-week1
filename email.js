@@ -1,7 +1,7 @@
 var appData = {
     	name: 'Gmail',
     	mailboxes: [
-    		'inbox',
+    		inbox:
     		'archives',
         'important',
         'draft',
@@ -37,10 +37,7 @@ var appData = {
       }
     }
 
-console.log(appData['name']);
+console.log(appData.name);
 console.log(appData.contacts);
 console.log(appData.inbox.primary);
-
-appData.contacts = function(){name: 'CJ', email: 'cjhustle@gmail.com'};
-
-console.log(appData.contacts);
+console.log(appData.mailboxes);
